@@ -1,0 +1,38 @@
+---
+import { Icon } from 'astro-icon';
+const iconSize = 30;
+const social = [
+    {
+        "type": "email",
+        "link": "mailto:hugo.le-moine@outlook.fr"
+    },
+    {
+        "type": "github",
+        "link": "https://github.com/hugolmn"
+    },
+    {
+        "type": "instagram",
+        "link": "https://instagram.com/hugo_le_moine"
+    },
+    {
+        "type": "linkedin",
+        "link": "https://linkedin.com/in/hugo-le-moine"
+    },
+    {
+        "type": "stackoverflow",
+        "link": "https://stackoverflow.com/users/13765085/hugolmn"
+    },
+    {
+        "type": "twitter",
+        "link": "https://twitter.com/hugo_le_moine_"
+    }
+]
+---
+<footer class="footer items-center p-4 bg-neutral text-neutral-content">
+    <div class="items-center grid-flow-col">
+      <p><Icon name="xml" height="15"/> with <Icon name="heart" height="15" /> by Hugo Le Moine</p>
+    </div> 
+    <div class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+        {social.map(item => <a href={item.link}><Icon name={item.type} height={iconSize}/></a>)}
+    </div>
+  </footer>
