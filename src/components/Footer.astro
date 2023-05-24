@@ -30,7 +30,7 @@ const social = [
 ---
 <footer class="footer items-center p-4 bg-neutral text-neutral-content">
     <div class="items-center grid-flow-col">
-      <p><Icon name="xml" height="15"/> with <Icon name="heart" height="15" /> by Hugo Le Moine</p>
+      <p><Icon name="xml" height="15" class="inline"/> with <Icon name="heart" height="15" class="inline"/> by Hugo Le Moine</p>
     </div> 
     <div class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
         {social.map(item => <a href={item.link}><Icon name={item.type} height={iconSize}/></a>)}
