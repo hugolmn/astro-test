@@ -33,6 +33,6 @@ const social = [
       <p><Icon name="xml" height="15" class="inline"/> with <Icon name="heart" height="15" class="inline"/> by <span class="font-bold">Hugo Le Moine</span></p>
     </div> 
     <div class="grid-flow-col gap-4 place-self-center md:justify-self-end">
-        {social.map(item => <a href={item.link}><Icon name={item.type} height={iconSize}/></a>)}
+        {social.map(item => <a href={item.link} aria-label={item.type}><Icon name={item.type} height={iconSize}/></a>)}
     </div>
 </footer>
